@@ -1,0 +1,189 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manasa S | Portfolio</title>
+
+<style>
+/* ===== DARK MODE ONLY ===== */
+:root {
+    --bg: #121212;
+    --text: #e0e0e0;
+    --card: #1e1e1e;
+    --accent: #90caf9;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #90caf9;
+}
+
+/* Sections */
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    background: var(--card);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+}
+
+h2 {
+    color: var(--accent);
+}
+
+/* Skills */
+.skills span {
+    display: inline-block;
+    background: #2a2a2a;
+    color: var(--accent);
+    padding: 8px 14px;
+    margin: 6px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.skills span:hover {
+    background: var(--accent);
+    color: #121212;
+}
+
+/* Projects */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+.project-card {
+    padding: 18px;
+    border-radius: 10px;
+    background: #181818;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+}
+
+/* Contact Form */
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #1a1a1a;
+    color: white;
+}
+
+form button {
+    background: var(--accent);
+    color: #121212;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    opacity: 0.9;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: #aaa;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Manasa S</h1>
+    <p>Student | Developer | Cloud & Cybersecurity Learner</p>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p>
+        I am a student passionate about Web Development, AWS Cloud,
+        and Cybersecurity. I enjoy building projects and learning daily.
+    </p>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Java</span>
+        <span>AWS</span>
+        <span>Cybersecurity</span>
+        <span>GitHub</span>
+    </div>
+</section>
+
+<section>
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Personal website hosted on GitHub Pages.</p>
+        </div>
+        <div class="project-card">
+            <h3>Java Programs</h3>
+            <p>Array, inheritance & OOP examples.</p>
+        </div>
+        <div class="project-card">
+            <h3>AWS Practice</h3>
+            <p>IAM, EC2, cloud fundamentals.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 Manasa S</p>
+</footer>
+
+</body>
+</html>
+
